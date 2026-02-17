@@ -16,7 +16,7 @@ function Home({ setPage, setBuyItem }) {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        let url = "http://localhost:5000/api/books?"
+        let url = "https://book-store-backend-g4e6.onrender.com"
         const params = new URLSearchParams()
 
         if (search) params.append("search", search)
