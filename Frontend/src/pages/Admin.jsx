@@ -3,7 +3,7 @@ import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
 import "../styles/Admin.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://book-store-backend-rg5z.onrender.com";
 
 function Admin() {
   const { user, token } = useContext(AuthContext);
