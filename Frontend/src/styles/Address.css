@@ -329,9 +329,14 @@
   .address-content {
     grid-template-columns: 1fr;
   }
-
+  
+  .payment-methods {
+    order: 1;
+  }
+  
   .order-summary {
     position: static;
+    order: -1;
   }
 
   .saved-addresses-list {
