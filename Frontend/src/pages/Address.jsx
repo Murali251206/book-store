@@ -336,7 +336,8 @@ function Address({ buyItem, setBuyItem, setPage }) {
           </div>
           <div className="summary-total">
             <p>Subtotal: <strong>₹{total.toFixed(2)}</strong></p>
-            <p>Tax (5%): <strong>₹{(total * 0.05).toFixed(2)}</strong></p>
+            <p>Tax (1%): <strong>₹{(total * 0.01).toFixed(2)}</strong></p>
+            <p>Delivery charges: <strong>Free</strong></p>
             <p className="grand-total">
               Total: <strong>₹{(total * 1.05).toFixed(2)}</strong>
             </p>
