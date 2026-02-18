@@ -19,7 +19,7 @@ function Payment({ buyItem, setOrders, setPage }) {
   })
 
   const total = buyItem.items.reduce((sum, item) => sum + (item.price * (item.quantity || 1)), 0)
-  const taxAmount = total * 0.05
+  const taxAmount = total * 0.01
   const finalAmount = total + taxAmount
 
   const handleCardChange = (e) => {
@@ -322,9 +322,12 @@ function Payment({ buyItem, setOrders, setPage }) {
               <strong>₹{total.toFixed(2)}</strong>
             </p>
             <p>
-              <span>Tax (5%):</span>
+              <span>Tax (1%):</span>
               <strong>₹{taxAmount.toFixed(2)}</strong>
             </p>
+            <p>
+              <span>Delivery charges:</span>
+              <strong>Free</strong></p>
             <p className="grand-total">
               <span>Total Amount:</span>
               <strong>₹{finalAmount.toFixed(2)}</strong>
